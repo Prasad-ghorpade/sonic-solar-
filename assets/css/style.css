@@ -1088,51 +1088,75 @@ transform:translateX(-50%);
 /* ==========================================================================
    8. Power Calculator Section Styles
    ========================================================================== */
+
 .calculator-section {
     position: relative;
 }
 
 .calculator-form-wrapper {
     background: var(--white);
-    padding: 1rem;
+    padding: 1.8rem 1.5rem;   /* more breathing space */
     border-radius: 20px;
     box-shadow: var(--box-shadow-lg);
-    max-width: 420px;
+    max-width: 440px;         /* thoda wider */
     margin: 0 auto;
 }
 
+/* INPUT FIELDS (slightly taller) */
 .calculator-form .form-control,
-.calculator-form textarea,
 .calculator-form .form-select {
-    height: 38px;
+    height: 36px;             /* thoda bada */
     padding: 6px 12px;
     font-size: 14px;
-}
-
-.calculator-form textarea {
-    height: auto;
-    min-height: 50px;
-}
-
-.calculator-form .form-control,
-.calculator-form .form-select {
     border: 2px solid var(--gray-300);
     border-radius: 10px;
-    padding: 0.75rem 1rem;
     transition: all var(--transition-speed) ease;
 }
 
+/* TEXTAREA */
+.calculator-form textarea {
+    min-height: 48px;         /* thoda bada */
+    height: auto;
+    padding: 6px 12px;
+    font-size: 14px;
+    border: 2px solid var(--gray-300);
+    border-radius: 10px;
+}
+
+/* FOCUS STATE */
 .calculator-form .form-control:focus,
-.calculator-form .form-select:focus {
+.calculator-form .form-select:focus,
+.calculator-form textarea:focus {
     border-color: var(--primary-color);
     box-shadow: 0 0 0 0.2rem rgba(46,125,50,0.15);
 }
 
+/* LABEL */
+.calculator-form .form-label{
+    display:flex;
+    align-items:center;
+    gap:6px;
+    line-height:1.2;
+    margin-bottom:5px;
+}
+
+/* SPACING */
+.calculator-form .mb-2{
+    margin-bottom:14px;
+}
+
+/* BUTTON */
+.calculator-form button{
+    height:38px;
+}
+
+/* BUTTON STYLE */
 .calculator-form .btn-check:checked + .btn-outline-primary {
     background-color: var(--primary-color);
     border-color: var(--primary-color);
 }
 
+/* BENEFITS LIST */
 .benefits-list li {
     transition: transform var(--transition-speed) ease;
 }
@@ -1148,7 +1172,6 @@ transform:translateX(-50%);
 .benefits-list .benefit-content .text-muted {
     font-size: 0.95rem;
 }
-
 /* ==========================================================================
    9. Gallery & Testimonials Section Styles
    ========================================================================== */

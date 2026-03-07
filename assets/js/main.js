@@ -713,3 +713,21 @@ function trackFormSubmission(formType, data) {
     // Add your form tracking code here
     console.log(`Form submitted: ${formType}`, data);
 }
+
+function calculateSolar(){
+
+let bill = document.getElementById("solarBill").value;
+
+if(!bill) return;
+
+let size = (bill / 1500).toFixed(1);
+let savings = Math.round(bill * 0.8);
+let energy = Math.round(size * 1500);
+
+document.getElementById("solarSize").innerText = size + " KW";
+document.getElementById("solarSavings").innerText = savings;
+document.getElementById("solarEnergy").innerText = energy;
+
+document.getElementById("solarResult").style.display = "block";
+
+}
