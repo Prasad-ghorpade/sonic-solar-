@@ -5,7 +5,8 @@
 }
 
 .trusted-badge-img {
-    max-height: 140px; /* increased size */
+    max-height: 140px;
+    /* increased size */
     height: auto;
     width: auto;
     border-radius: 8px;
@@ -16,7 +17,8 @@
 
 @media (max-width: 576px) {
     .trusted-badge-img {
-        max-height: 100px; /* scale down on small screens but larger than before */
+        max-height: 100px;
+        /* scale down on small screens but larger than before */
     }
 }
 
@@ -28,19 +30,20 @@
 
 /* Center text and CTAs on mobile/tablet */
 @media (max-width: 992px) {
+
     .hero-section .hero-badge,
     .hero-section .hero-title,
     .hero-section .hero-subtitle,
     .hero-section .hero-cta {
         text-align: center !important;
     }
-    
+
     .hero-section .hero-subtitle {
         font-size: 1.1rem !important;
         line-height: 1.6 !important;
         font-weight: 700 !important;
     }
-    
+
     /* Center the 'Trusted Since 2009' badge only on mobile/tablet */
     .hero-section .hero-badge {
         display: flex;
@@ -48,15 +51,18 @@
         justify-content: center;
         gap: 0.5rem;
     }
+
     .hero-section .hero-badge i {
         font-size: 1.25rem;
         color: #ffffff;
     }
+
     .hero-section .hero-badge span {
         font-weight: 700;
         color: #ffffff;
         letter-spacing: 0.02em;
     }
+
     .hero-section .hero-cta .btn {
         margin-left: 0 !important;
         margin-right: 0 !important;
@@ -64,6 +70,7 @@
         width: 100%;
         margin-bottom: 0.75rem !important;
     }
+
     .hero-section .trusted-badge-wrapper {
         justify-content: center;
     }
@@ -110,8 +117,8 @@
 
     --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     --transition-speed: 0.3s;
-    --box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    --box-shadow-lg: 0 10px 30px rgba(0,0,0,0.15);
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --box-shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
 /* ==========================================================================
@@ -162,7 +169,7 @@ main {
 }
 
 
-img{
+img {
     image-rendering: auto;
     -webkit-font-smoothing: antialiased;
 }
@@ -245,7 +252,7 @@ img{
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(46,125,50,0.9) 0%, rgba(102,187,106,0.9) 100%);
+    background: linear-gradient(135deg, rgba(46, 125, 50, 0.9) 0%, rgba(102, 187, 106, 0.9) 100%);
     z-index: 1;
 }
 
@@ -255,7 +262,7 @@ img{
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: 
+    background-image:
         radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
         radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
     background-size: 50px 50px;
@@ -264,8 +271,13 @@ img{
 }
 
 @keyframes particlesMove {
-    from { background-position: 0 0; }
-    to { background-position: 50px 50px; }
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 50px 50px;
+    }
 }
 
 .hero-section .container {
@@ -413,9 +425,11 @@ img{
     0% {
         box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
     }
+
     70% {
         box-shadow: 0 0 0 15px rgba(255, 255, 255, 0);
     }
+
     100% {
         box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
     }
@@ -425,7 +439,7 @@ img{
 
 
 .industrial-badge {
-    background: rgba(255,255,255,0.15);
+    background: rgba(255, 255, 255, 0.15);
     color: #fff;
     padding: 8px 14px;
     margin: 8px;
@@ -496,6 +510,7 @@ img{
         opacity: 0;
         transform: translateX(50px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
@@ -526,11 +541,12 @@ img{
     align-items: center;
     justify-content: center;
     font-size: 0.85rem;
-    
+
 }
-.hero-form .input-group{
-    
-    
+
+.hero-form .input-group {
+
+
     margin-bottom: 1rem;
 }
 
@@ -621,12 +637,19 @@ img{
 }
 
 @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
         transform: translateY(0);
     }
+
     40% {
         transform: translateY(-10px);
     }
+
     60% {
         transform: translateY(-5px);
     }
@@ -637,6 +660,7 @@ img{
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -648,6 +672,7 @@ img{
         opacity: 0;
         transform: translateY(-20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -709,8 +734,15 @@ img{
 }
 
 @keyframes floatBadge {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
 }
 
 .image-float-badge i {
@@ -746,6 +778,7 @@ img{
         opacity: 0;
         transform: translateX(-20px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
@@ -753,127 +786,127 @@ img{
 }
 
 /* SECTION */
-.solar-benefits-section{
-padding:90px 0;
-background:#f8fafc;
+.solar-benefits-section {
+    padding: 90px 0;
+    background: #f8fafc;
 }
 
 
 /* IMAGE */
-.solar-image-wrapper{
-position:relative;
-text-align:center;
+.solar-image-wrapper {
+    position: relative;
+    text-align: center;
 }
 
-.solar-main-image{
-width:100%;
-max-width:420px;
-border-radius:20px;
-box-shadow:0 25px 60px rgba(0,0,0,0.12);
+.solar-main-image {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 20px;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.12);
 }
 
-.solar-floating-badge{
-position:absolute;
-top:-10px;
-right:40px;
-background:white;
-padding:8px 16px;
-border-radius:30px;
-font-size:13px;
-font-weight:600;
-box-shadow:0 10px 25px rgba(0,0,0,0.1);
-display:flex;
-gap:6px;
-align-items:center;
+.solar-floating-badge {
+    position: absolute;
+    top: -10px;
+    right: 40px;
+    background: white;
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 600;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 6px;
+    align-items: center;
 }
 
-.solar-floating-badge i{
-color:#f9a825;
+.solar-floating-badge i {
+    color: #f9a825;
 }
 
 
 /* TEXT */
-.solar-title{
-font-size:34px;
-font-weight:700;
-margin-bottom:15px;
+.solar-title {
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 15px;
 }
 
-.solar-title span{
-color:#2e7d32;
+.solar-title span {
+    color: #2e7d32;
 }
 
-.solar-desc{
-color:#6c757d;
-margin-bottom:20px;
+.solar-desc {
+    color: #6c757d;
+    margin-bottom: 20px;
 }
 
 
 /* ALERT */
-.solar-info{
-background:#fff4cc;
-padding:12px 16px;
-border-radius:10px;
-font-size:14px;
-margin-bottom:20px;
-display:flex;
-gap:8px;
-align-items:center;
+.solar-info {
+    background: #fff4cc;
+    padding: 12px 16px;
+    border-radius: 10px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
 }
 
 
 /* GRID */
-.solar-grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:15px;
-margin-top:10px;
+.solar-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 10px;
 }
 
 
 /* CARD */
-.solar-card{
-display:flex;
-gap:12px;
-padding:16px;
-background:white;
-border-radius:12px;
-box-shadow:0 6px 18px rgba(0,0,0,0.05);
-transition:all .3s ease;
+.solar-card {
+    display: flex;
+    gap: 12px;
+    padding: 16px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+    transition: all .3s ease;
 }
 
-.solar-card:hover{
-transform:translateY(-4px);
-box-shadow:0 15px 35px rgba(0,0,0,0.1);
+.solar-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
 }
 
-.solar-card i{
-font-size:20px;
-color:#2e7d32;
+.solar-card i {
+    font-size: 20px;
+    color: #2e7d32;
 }
 
-.solar-card strong{
-display:block;
-font-size:15px;
+.solar-card strong {
+    display: block;
+    font-size: 15px;
 }
 
-.solar-card p{
-margin:0;
-font-size:13px;
-color:#6c757d;
+.solar-card p {
+    margin: 0;
+    font-size: 13px;
+    color: #6c757d;
 }
 
 
 /* CTA */
-.solar-cta{
-margin-top:30px;
+.solar-cta {
+    margin-top: 30px;
 }
 
-.solar-cta .btn{
-padding:12px 28px;
-border-radius:40px;
-font-weight:600;
-box-shadow:0 10px 25px rgba(46,125,50,0.25);
+.solar-cta .btn {
+    padding: 12px 28px;
+    border-radius: 40px;
+    font-weight: 600;
+    box-shadow: 0 10px 25px rgba(46, 125, 50, 0.25);
 }
 
 
@@ -882,67 +915,67 @@ box-shadow:0 10px 25px rgba(46,125,50,0.25);
    MOBILE RESPONSIVE FIX
 ================================ */
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
 
-/* entire section center */
-.solar-benefits-section{
-text-align:center;
-}
+    /* entire section center */
+    .solar-benefits-section {
+        text-align: center;
+    }
 
-/* title center */
-.solar-title{
-text-align:center;
-}
+    /* title center */
+    .solar-title {
+        text-align: center;
+    }
 
-/* description center */
-.solar-desc{
-text-align:center;
-}
+    /* description center */
+    .solar-desc {
+        text-align: center;
+    }
 
-/* info alert center */
-.solar-info{
-justify-content:center;
-text-align:center;
-}
+    /* info alert center */
+    .solar-info {
+        justify-content: center;
+        text-align: center;
+    }
 
-/* benefits heading center */
-.solar-subtitle{
-text-align:center;
-}
+    /* benefits heading center */
+    .solar-subtitle {
+        text-align: center;
+    }
 
-/* benefits grid single column */
-.solar-grid{
-grid-template-columns:1fr;
-}
+    /* benefits grid single column */
+    .solar-grid {
+        grid-template-columns: 1fr;
+    }
 
-/* benefit cards align center */
-.solar-card{
-text-align:left;
-}
+    /* benefit cards align center */
+    .solar-card {
+        text-align: left;
+    }
 
-/* CTA center */
-.solar-cta{
-display:flex;
-justify-content:center;
-}
+    /* CTA center */
+    .solar-cta {
+        display: flex;
+        justify-content: center;
+    }
 
-/* button center */
-.solar-cta .btn{
-margin:auto;
-}
+    /* button center */
+    .solar-cta .btn {
+        margin: auto;
+    }
 
-/* image center */
-.solar-image-wrapper{
-display:flex;
-justify-content:center;
-}
+    /* image center */
+    .solar-image-wrapper {
+        display: flex;
+        justify-content: center;
+    }
 
-/* badge reposition mobile */
-.solar-floating-badge{
-right:auto;
-left:50%;
-transform:translateX(-50%);
-}
+    /* badge reposition mobile */
+    .solar-floating-badge {
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 
 }
 
@@ -1095,17 +1128,20 @@ transform:translateX(-50%);
 
 .calculator-form-wrapper {
     background: var(--white);
-    padding: 1.8rem 1.5rem;   /* more breathing space */
+    padding: 1.8rem 1.5rem;
+    /* more breathing space */
     border-radius: 20px;
     box-shadow: var(--box-shadow-lg);
-    max-width: 440px;         /* thoda wider */
+    max-width: 440px;
+    /* thoda wider */
     margin: 0 auto;
 }
 
 /* INPUT FIELDS (slightly taller) */
 .calculator-form .form-control,
 .calculator-form .form-select {
-    height: 36px;             /* thoda bada */
+    height: 36px;
+    /* thoda bada */
     padding: 6px 12px;
     font-size: 14px;
     border: 2px solid var(--gray-300);
@@ -1115,7 +1151,8 @@ transform:translateX(-50%);
 
 /* TEXTAREA */
 .calculator-form textarea {
-    min-height: 48px;         /* thoda bada */
+    min-height: 48px;
+    /* thoda bada */
     height: auto;
     padding: 6px 12px;
     font-size: 14px;
@@ -1128,30 +1165,30 @@ transform:translateX(-50%);
 .calculator-form .form-select:focus,
 .calculator-form textarea:focus {
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 0.2rem rgba(46,125,50,0.15);
+    box-shadow: 0 0 0 0.2rem rgba(46, 125, 50, 0.15);
 }
 
 /* LABEL */
-.calculator-form .form-label{
-    display:flex;
-    align-items:center;
-    gap:6px;
-    line-height:1.2;
-    margin-bottom:5px;
+.calculator-form .form-label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    line-height: 1.2;
+    margin-bottom: 5px;
 }
 
 /* SPACING */
-.calculator-form .mb-2{
-    margin-bottom:14px;
+.calculator-form .mb-2 {
+    margin-bottom: 14px;
 }
 
 /* BUTTON */
-.calculator-form button{
-    height:38px;
+.calculator-form button {
+    height: 38px;
 }
 
 /* BUTTON STYLE */
-.calculator-form .btn-check:checked + .btn-outline-primary {
+.calculator-form .btn-check:checked+.btn-outline-primary {
     background-color: var(--primary-color);
     border-color: var(--primary-color);
 }
@@ -1172,6 +1209,7 @@ transform:translateX(-50%);
 .benefits-list .benefit-content .text-muted {
     font-size: 0.95rem;
 }
+
 /* ==========================================================================
    9. Gallery & Testimonials Section Styles
    ========================================================================== */
@@ -1179,16 +1217,16 @@ transform:translateX(-50%);
     background-color: var(--light-bg);
 }
 
-.gallery-item{
-aspect-ratio: 4/3;
-overflow:hidden;
-border-radius:15px;
+.gallery-item {
+    aspect-ratio: 4/3;
+    overflow: hidden;
+    border-radius: 15px;
 }
 
-.gallery-item img{
-width:100%;
-height:100%;
-object-fit:cover;
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .gallery-overlay {
@@ -1209,11 +1247,11 @@ object-fit:cover;
     transform: scale(1.05);
 }
 
-@media (max-width:768px){
+@media (max-width:768px) {
 
-.gallery-item:hover img{
-    transform:none;
-}
+    .gallery-item:hover img {
+        transform: none;
+    }
 
 }
 
@@ -1336,7 +1374,7 @@ object-fit:cover;
     padding: 0.75rem 1rem;
     border-radius: 10px;
     font-weight: 500;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
     transition: all var(--transition-speed) ease;
     border: 2px solid transparent;
 }
@@ -1387,13 +1425,14 @@ object-fit:cover;
     height: auto;
     min-height: 80px;
 }
+
 /* ==========================================================================
    12. Footer Styles
    ========================================================================== */
 .footer {
     background: linear-gradient(135deg, var(--gray-900), var(--gray-800));
-    width:100vw;
-margin-left:calc(-50vw + 50%);
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
 }
 
 .footer a {
@@ -1416,14 +1455,17 @@ margin-left:calc(-50vw + 50%);
 
 
 /* our partners */
-.partners-list{
-    column-count: 3;   /* 2 → 3 */
+.partners-list {
+    column-count: 3;
+    /* 2 → 3 */
     column-gap: 12px;
-    max-width: 260px;  /* thoda width badhao warna squeeze hoga */
+    max-width: 260px;
+    /* thoda width badhao warna squeeze hoga */
 }
 
-.partners-title{
-    margin-left: 50px; /* 60 zyada tha */
+.partners-title {
+    margin-left: 50px;
+    /* 60 zyada tha */
 }
 
 /* ==========================================================================
@@ -1432,7 +1474,8 @@ margin-left:calc(-50vw + 50%);
 .scroll-top-btn {
     position: fixed;
     bottom: 30px;
-    right: 16px; /* reduce to avoid viewport overflow */
+    right: 16px;
+    /* reduce to avoid viewport overflow */
     width: 50px;
     height: 50px;
     background: var(--primary-color);
@@ -1463,7 +1506,8 @@ margin-left:calc(-50vw + 50%);
 .whatsapp-float {
     position: fixed;
     bottom: 100px;
-    right: 16px; /* reduce to avoid viewport overflow */
+    right: 16px;
+    /* reduce to avoid viewport overflow */
     width: 60px;
     height: 60px;
     background: #25d366;
@@ -1489,9 +1533,11 @@ margin-left:calc(-50vw + 50%);
     0% {
         box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
     }
+
     70% {
         box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
     }
+
     100% {
         box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
     }
@@ -1511,13 +1557,13 @@ margin-left:calc(-50vw + 50%);
 .btn-primary {
     background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
     color: var(--white);
-    box-shadow: 0 4px 15px rgba(46,125,50,0.35);
+    box-shadow: 0 4px 15px rgba(46, 125, 50, 0.35);
 }
 
 .btn-primary:hover {
     background: linear-gradient(135deg, var(--primary-dark), var(--primary-color));
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(46,125,50,0.45);
+    box-shadow: 0 6px 20px rgba(46, 125, 50, 0.45);
 }
 
 .btn-outline-light {
@@ -1541,9 +1587,17 @@ margin-left:calc(-50vw + 50%);
 }
 
 /* Bootstrap utility overrides to align primary color */
-.text-primary { color: var(--primary-color) !important; }
-.bg-primary { background-color: var(--primary-color) !important; }
-.border-primary { border-color: var(--primary-color) !important; }
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+.border-primary {
+    border-color: var(--primary-color) !important;
+}
 
 /* ==========================================================================
    16. Responsive Design
@@ -1552,17 +1606,18 @@ margin-left:calc(-50vw + 50%);
     .hero-section {
         min-height: auto;
         padding: 120px 0 60px;
-        background-attachment: scroll; /* prevent iOS jank */
+        background-attachment: scroll;
+        /* prevent iOS jank */
     }
-    
+
     .hero-title {
         font-size: 2.5rem !important;
     }
-    
+
     .navbar-nav .nav-link::after {
         display: none;
     }
-    
+
     .solution-card,
     .why-card {
         margin-bottom: 1rem;
@@ -1573,28 +1628,28 @@ margin-left:calc(-50vw + 50%);
     .hero-title {
         font-size: 2rem !important;
     }
-    
+
     .hero-subtitle {
         font-size: 1rem !important;
     }
-    
+
     .hero-form-card {
         padding: 1.5rem;
     }
-    
+
     .btn-lg {
         padding: 0.75rem 1.5rem;
         font-size: 1rem;
     }
-    
+
     .display-5 {
         font-size: 2rem !important;
     }
-    
+
     .stat-number {
         font-size: 2.5rem !important;
     }
-    
+
     .whatsapp-float {
         bottom: 80px;
         right: 20px;
@@ -1602,7 +1657,7 @@ margin-left:calc(-50vw + 50%);
         height: 50px;
         font-size: 1.5rem;
     }
-    
+
     .scroll-top-btn {
         bottom: 20px;
         right: 20px;
@@ -1634,7 +1689,11 @@ margin-left:calc(-50vw + 50%);
 }
 
 /* Smooth transitions for all interactive elements */
-a, button, input, select, textarea {
+a,
+button,
+input,
+select,
+textarea {
     transition: all var(--transition-speed) ease;
 }
 
@@ -1665,21 +1724,21 @@ a, button, input, select, textarea {
     animation-play-state: paused;
 }
 
-.partner-item{
-    flex-shrink:0;
-    width:200px;
-    height:100px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
+.partner-item {
+    flex-shrink: 0;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.partner-img{
-    max-width:160px;
-    max-height:60px;
-    width:auto;
-    height:auto;
-    object-fit:contain;
+.partner-img {
+    max-width: 160px;
+    max-height: 60px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
 }
 
 .partner-img:hover {
@@ -1692,6 +1751,7 @@ a, button, input, select, textarea {
     0% {
         transform: translateX(0);
     }
+
     100% {
         transform: translateX(-50%);
     }
@@ -1703,7 +1763,7 @@ a, button, input, select, textarea {
         width: 170px;
         height: 70px;
     }
-    
+
     .partners-scroll-track {
         gap: 40px;
         animation: scrollRight 15s linear infinite;
@@ -1715,11 +1775,11 @@ a, button, input, select, textarea {
         width: 150px;
         height: 62px;
     }
-    
+
     .partners-scroll-track {
         gap: 30px;
     }
-    
+
     .partners-scroll-section h5 {
         font-size: 0.95rem;
     }
@@ -1727,6 +1787,7 @@ a, button, input, select, textarea {
 
 /* Print Styles */
 @media print {
+
     .navbar,
     .whatsapp-float,
     .scroll-top-btn {

@@ -28,11 +28,11 @@
     // ==========================================================================
     // 2. Initialize AOS (Animate On Scroll)
     // ==========================================================================
-   AOS.init({
-duration: 800,
-once: true,
-disable: 'mobile'
-});
+    AOS.init({
+        duration: 800,
+        once: true,
+        disable: 'mobile'
+    });
 
     // ==========================================================================
     // 2. Navbar Scroll Effect
@@ -714,20 +714,20 @@ function trackFormSubmission(formType, data) {
     console.log(`Form submitted: ${formType}`, data);
 }
 
-function calculateSolar(){
+function calculateSolar() {
 
-let bill = document.getElementById("solarBill").value;
+    let bill = document.getElementById("solarBill").value;
 
-if(!bill) return;
+    if (!bill) return;
 
-let size = (bill / 1500).toFixed(1);
-let savings = Math.round(bill * 0.8);
-let energy = Math.round(size * 1500);
+    let size = (bill / 1500).toFixed(1);
+    let savings = Math.round(bill * 0.8);
+    let energy = Math.round(size * 1500);
 
-document.getElementById("solarSize").innerText = size + " KW";
-document.getElementById("solarSavings").innerText = savings;
-document.getElementById("solarEnergy").innerText = energy;
+    document.getElementById("solarSize").innerText = size + " KW";
+    document.getElementById("solarSavings").innerText = savings;
+    document.getElementById("solarEnergy").innerText = energy;
 
-document.getElementById("solarResult").style.display = "block";
+    document.getElementById("solarResult").style.display = "block";
 
 }
