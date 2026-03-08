@@ -38,6 +38,7 @@
     // 2. Navbar Scroll Effect
     // ==========================================================================
     const navbar = document.querySelector('.navbar');
+    const passiveScroll = { passive: true };
 
     window.addEventListener('scroll', function () {
         if (window.scrollY > 100) {
@@ -45,7 +46,7 @@
         } else {
             navbar.classList.remove('scrolled');
         }
-    });
+    }, passiveScroll);
 
     // ==========================================================================
     // 3. Smooth Scroll for Navigation Links
@@ -104,8 +105,6 @@
         });
     }
 
-    window.addEventListener('scroll', highlightNavigation);
-
     // ==========================================================================
     // 5. Scroll to Top Button
     // ==========================================================================
@@ -117,7 +116,7 @@
         } else {
             scrollTopBtn.style.display = 'none';
         }
-    });
+    }, passiveScroll);
 
     scrollTopBtn.addEventListener('click', function () {
         window.scrollTo({
@@ -165,7 +164,7 @@
         }
     }
 
-    window.addEventListener('scroll', animateStats);
+    window.addEventListener('scroll', animateStats, passiveScroll);
     animateStats(); // Check on page load
 
     // ==========================================================================
@@ -439,8 +438,8 @@
             // Get form data
             const name = document.getElementById('contactName').value;
             const phone = document.getElementById('contactMobile').value;
-            const email = document.getElementById('contactEmail').value;
-            const requirement = document.getElementById('requirement').value;
+            const location = document.getElementById('contactLocation').value;
+            const requirement = document.getElementById('contactRequirement').value;
 
             const submitBtn = contactForm.querySelector('button[type="submit"]');
             const originalBtnText = submitBtn.innerHTML;
@@ -450,10 +449,10 @@
             // Prepare CRM params
             const params = {
                 name: name,
-                email: email || "",
+                email: "",
                 phone: phone,
                 requirement: requirement,
-                address: "",
+                address: location || "",
             };
 
             console.log('Contact Form params:', params);
@@ -612,7 +611,7 @@
 
     // Apply debounce to scroll-heavy functions
     const debouncedHighlightNav = debounce(highlightNavigation, 100);
-    window.addEventListener('scroll', debouncedHighlightNav);
+    window.addEventListener('scroll', debouncedHighlightNav, passiveScroll);
 
     // ==========================================================================
     // 18. Page Load Analytics (Optional)

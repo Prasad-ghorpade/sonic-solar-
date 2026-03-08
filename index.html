@@ -43,16 +43,28 @@
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
 
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://unpkg.com" crossorigin>
+    <link rel="preload" as="image" href="./assets/images/badge.png" fetchpriority="high">
+
     <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" as="style"
+        crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin>
 
     <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" as="style"
+        crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+        crossorigin>
 
     <!-- AOS Animation Library -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style" crossorigin>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" crossorigin>
 
     <!-- Custom CSS -->
+    <link rel="preload" href="./assets/css/style.css" as="style">
     <link rel="stylesheet" href="./assets/css/style.css">
 
     <!-- Google Tag Manager -->
@@ -119,16 +131,13 @@
     }
     </script>
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-983642040"></script>
-    <script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'AW-983642040'); </script>
-
 </head>
 
 <body>
 
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NLH5PV2B" height="0" width="0"
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NLH5PV2B" title="Google Tag Manager"
+            height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
@@ -136,7 +145,8 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
         <div class="container">
             <a class="navbar-brand" href="https://www.sonicdistributors.com/">
-                <img src="./assets/images/sonic-logo.png" alt="Sonic Distributors Logo" height="50">
+                <img src="./assets/images/sonic-logo.png" alt="Sonic Distributors Logo" width="158" height="50"
+                    decoding="async">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -224,7 +234,8 @@
 
                         <!-- Trusted Badges Image -->
                         <div class="trusted-badge-wrapper mt-2 text-start">
-                            <img src="./assets/images/badge.png" alt="Trusted Badges" class="trusted-badge-img">
+                            <img src="./assets/images/badge.png" alt="Trusted Badges" class="trusted-badge-img"
+                                fetchpriority="high" decoding="async" width="3472" height="1094">
                         </div>
                     </div>
                 </div>
@@ -246,6 +257,7 @@
                                         <i class="bi bi-person-fill"></i>
                                     </span>
                                     <input type="text" class="form-control form-control-lg" id="heroName"
+                                        aria-label="Your Full Name"
                                         placeholder="Your Full Name *" required>
                                 </div>
                             </div>
@@ -256,6 +268,7 @@
                                         <i class="bi bi-telephone-fill"></i>
                                     </span>
                                     <input type="tel" class="form-control form-control-lg" id="heroPhone"
+                                        aria-label="Mobile Number"
                                         placeholder="Mobile Number *" pattern="[0-9]{10}" required>
                                 </div>
                             </div>
@@ -266,6 +279,7 @@
                                         <i class="bi bi-geo-alt-fill"></i>
                                     </span>
                                     <input type="text" class="form-control form-control-lg" id="heroLocation"
+                                        aria-label="Your City or Area"
                                         placeholder="Your City / Area" required>
                                 </div>
                             </div>
@@ -275,7 +289,8 @@
                                     <span class="input-group-text">
                                         <i class="bi bi-sun-fill"></i>
                                     </span>
-                                    <select class="form-select form-select-lg" id="heroRequirement" required>
+                                    <select class="form-select form-select-lg" id="heroRequirement"
+                                        aria-label="Select Your Requirement" required>
                                         <option value="">Select Your Requirement *</option>
                                         <option value="residential-solar">Residential Solar Systems</option>
                                         <option value="commercial-solar">Commercial Solar Systems</option>
@@ -350,48 +365,59 @@
                 <div class="partners-scroll-track" id="partnersScrollTrack">
 
                     <div class="partner-item">
-                        <img src="./assets/images/partners/waaree.png" alt="Waaree Solar" class="partner-img">
+                        <img src="./assets/images/partners/waaree.png" alt="Waaree Solar" class="partner-img"
+                            loading="lazy" decoding="async" width="1934" height="537">
                     </div>
 
                     <div class="partner-item">
-                        <img src="./assets/images/partners/adani.png" alt="Adani Solar" class="partner-img">
+                        <img src="./assets/images/partners/adani.png" alt="Adani Solar" class="partner-img"
+                            loading="lazy" decoding="async" width="900" height="500">
                     </div>
 
                     <div class="partner-item">
-                        <img src="./assets/images/partners/Tata.png" alt="Tata Power Solar" class="partner-img">
+                        <img src="./assets/images/partners/Tata.png" alt="Tata Power Solar" class="partner-img"
+                            loading="lazy" decoding="async" width="258" height="110">
                     </div>
 
                     <div class="partner-item">
-                        <img src="./assets/images/partners/vikrm.png" alt="Vikram Solar" class="partner-img">
+                        <img src="./assets/images/partners/vikrm.png" alt="Vikram Solar" class="partner-img"
+                            loading="lazy" decoding="async" width="900" height="382">
                     </div>
 
                     <div class="partner-item">
-                        <img src="./assets/images/partners/exide.png" alt="Exide Solar" class="partner-img">
+                        <img src="./assets/images/partners/exide.webp" alt="Exide Solar" class="partner-img"
+                            loading="lazy" decoding="async" width="220" height="92">
                     </div>
 
                     <div class="partner-item">
-                        <img src="./assets/images/partners/luminous.png" alt="Luminous Solar" class="partner-img">
+                        <img src="./assets/images/partners/luminous.webp" alt="Luminous Solar" class="partner-img"
+                            loading="lazy" decoding="async" width="220" height="92">
                     </div>
 
                     <div class="partner-item">
-                        <img src="./assets/images/partners/goldi.png" alt="Goldi Solar" class="partner-img">
+                        <img src="./assets/images/partners/goldi.png" alt="Goldi Solar" class="partner-img"
+                            loading="lazy" decoding="async" width="2364" height="1238">
                     </div>
 
                     <div class="partner-item">
-                        <img src="./assets/images/partners/Growatt.png" alt="Growatt solor" class="partner-img">
+                        <img src="./assets/images/partners/Growatt.png" alt="Growatt solar" class="partner-img"
+                            loading="lazy" decoding="async" width="2009" height="489">
                     </div>
 
                     <div class="partner-item">
-                        <img src="./assets/images/partners/kirloskar.png" alt="kirloskar solar" class="partner-img">
+                        <img src="./assets/images/partners/kirloskar.webp" alt="Kirloskar Solar" class="partner-img"
+                            loading="lazy" decoding="async" width="207" height="81">
                     </div>
 
                     <div class="partner-item">
-                        <img src="./assets/images/partners/solis.png" alt="Solis Inverter" class="partner-img">
+                        <img src="./assets/images/partners/solis.png" alt="Solis Inverter" class="partner-img"
+                            loading="lazy" decoding="async" width="249" height="96">
                     </div>
 
 
                     <div class="partner-item">
-                        <img src="./assets/images/partners/solex.png" alt="RenewSys Solar" class="partner-img">
+                        <img src="./assets/images/partners/solex.png" alt="RenewSys Solar" class="partner-img"
+                            loading="lazy" decoding="async" width="240" height="120">
                     </div>
 
 
@@ -438,11 +464,11 @@ box-shadow:0 18px 45px rgba(0,0,0,0.08);transition:all .35s ease;"
                 <div style="display:flex;gap:22px;flex-wrap:wrap;align-items:center;justify-content:center;">
 
                     <div style="flex:1;min-width:250px;">
-                        <label style="font-weight:600;margin-bottom:8px;display:block;font-size:15px;">
+                        <label for="solarBill" style="font-weight:600;margin-bottom:8px;display:block;font-size:15px;">
                             Monthly Electricity Bill
                         </label>
 
-                        <select id="solarBill" style="width:100%;height:48px;border-radius:8px;border:1px solid #ced4da;padding:6px 14px;font-size:15px;
+                        <select id="solarBill" aria-label="Monthly Electricity Bill" style="width:100%;height:48px;border-radius:8px;border:1px solid #ced4da;padding:6px 14px;font-size:15px;
 transition:all .25s ease;" onfocus="this.style.borderColor='#2e7d32';this.style.boxShadow='0 0 0 3px rgba(46,125,50,0.15)'"
                             onblur="this.style.borderColor='#ced4da';this.style.boxShadow='none'">
 
@@ -800,7 +826,7 @@ box-shadow:0 8px 25px rgba(0,0,0,0.06);
                     <div class="solar-image-wrapper">
 
                         <img src="./assets/images/power-outage-2.png" alt="Rooftop solar panel installation in Pune"
-                            class="solar-main-image">
+                            class="solar-main-image" loading="lazy" decoding="async" >
 
                         <div class="solar-floating-badge">
                             <i class="bi bi-sun-fill"></i>
@@ -1215,31 +1241,34 @@ box-shadow:0 8px 25px rgba(0,0,0,0.06);
                             </h3>
 
                             <div class="mb-2">
-                                <label class="form-label small fw-semibold">
+                                <label class="form-label small fw-semibold" for="fullName">
                                     <i class="bi bi-person me-2 text-primary"></i>
                                     Your Name *
                                 </label>
                                 <input type="text" class="form-control form-control-sm" id="fullName"
+                                    aria-label="Your Name"
                                     placeholder="Enter your full name" required>
                             </div>
 
                             <div class="mb-2">
-                                <label class="form-label small fw-semibold">
+                                <label class="form-label small fw-semibold" for="mobile">
                                     <i class="bi bi-telephone me-2 text-primary"></i>
                                     Mobile Number *
                                 </label>
                                 <input type="tel" class="form-control form-control-sm" id="mobile"
+                                    aria-label="Mobile Number"
                                     placeholder="10-digit mobile number" pattern="[0-9]{10}" required>
                             </div>
 
                             <!-- ELECTRICITY BILL FILTER -->
                             <div class="mb-2">
-                                <label class="form-label small fw-semibold">
+                                <label class="form-label small fw-semibold" for="electricityBill">
                                     <i class="bi bi-lightning-charge me-2 text-primary"></i>
                                     Monthly Electricity Bill *
                                 </label>
 
-                                <select class="form-select form-select-sm" id="electricityBill" required>
+                                <select class="form-select form-select-sm" id="electricityBill"
+                                    aria-label="Monthly Electricity Bill" required>
                                     <option value="">Select your monthly bill</option>
                                     <option>₹1,000 – ₹3,000</option>
                                     <option>₹3,000 – ₹5,000</option>
@@ -1249,21 +1278,23 @@ box-shadow:0 8px 25px rgba(0,0,0,0.06);
                             </div>
 
                             <div class="mb-2">
-                                <label class="form-label small fw-semibold">
+                                <label class="form-label small fw-semibold" for="requirement">
                                     <i class="bi bi-chat-dots me-2 text-primary"></i>
                                     Your Requirement *
                                 </label>
-                                <textarea class="form-control form-control-sm" id="requirement" rows="2"
+                                <textarea class="form-control form-control-sm" id="requirement"
+                                    aria-label="Your Requirement" rows="2"
                                     placeholder="Tell us about your electricity bill or solar requirement"
                                     required></textarea>
                             </div>
 
                             <div class="mb-3">
-                                <label class="form-label small fw-semibold">
+                                <label class="form-label small fw-semibold" for="location">
                                     <i class="bi bi-geo-alt me-2 text-primary"></i>
                                     Your Location *
                                 </label>
                                 <input type="text" class="form-control form-control-sm" id="location"
+                                    aria-label="Your Location"
                                     placeholder="Enter your city / area" required>
                             </div>
 
@@ -1310,7 +1341,9 @@ box-shadow:0 8px 25px rgba(0,0,0,0.06);
                 <!-- 1 -->
                 <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
                     <div class="gallery-item">
-                        <img src="./assets/images/residential-solar-installations.webp" class="img-fluid rounded">
+                        <img src="./assets/images/residential-solar-installations.webp"
+                            alt="Residential rooftop solar installation at Baner Pune" class="img-fluid rounded"
+                            loading="lazy" decoding="async" width="1600" height="903">
                         <div class="gallery-overlay">
                             <div class="gallery-content">
                                 <h4 class="text-white">BANER, PUNE</h4>
@@ -1326,7 +1359,9 @@ box-shadow:0 8px 25px rgba(0,0,0,0.06);
                 <!-- 2 -->
                 <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
                     <div class="gallery-item">
-                        <img src="./assets/images/industry2.webp" class="img-fluid rounded">
+                        <img src="./assets/images/industry2.webp"
+                            alt="Commercial solar installation at Chakan Industrial Area" class="img-fluid rounded"
+                            loading="lazy" decoding="async" width="2560" height="1920">
                         <div class="gallery-overlay">
                             <div class="gallery-content">
                                 <h4 class="text-white">CHAKAN INDUSTRIAL AREA</h4>
@@ -1342,7 +1377,9 @@ box-shadow:0 8px 25px rgba(0,0,0,0.06);
                 <!-- 3 -->
                 <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
                     <div class="gallery-item">
-                        <img src="./assets/images/warehouse.png" class="img-fluid rounded">
+                        <img src="./assets/images/warehouse.png"
+                            alt="Industrial solar plant at Ranjangaon MIDC" class="img-fluid rounded" loading="lazy"
+                            decoding="async" width="600" height="400">
                         <div class="gallery-overlay">
                             <div class="gallery-content">
                                 <h4 class="text-white">RANJANGAON MIDC</h4>
@@ -1358,7 +1395,9 @@ box-shadow:0 8px 25px rgba(0,0,0,0.06);
                 <!-- 4 -->
                 <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
                     <div class="gallery-item">
-                        <img src="./assets/images/industrial.png" class="img-fluid rounded">
+                        <img src="./assets/images/industrial.png"
+                            alt="Warehouse solar system at Talegaon Industrial Zone" class="img-fluid rounded"
+                            loading="lazy" decoding="async" width="1024" height="683">
                         <div class="gallery-overlay">
                             <div class="gallery-content">
                                 <h4 class="text-white">TALEGAON INDUSTRIAL ZONE</h4>
@@ -1374,7 +1413,9 @@ box-shadow:0 8px 25px rgba(0,0,0,0.06);
                 <!-- 5 -->
                 <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
                     <div class="gallery-item">
-                        <img src="./assets/images/home-solor.webp" class="img-fluid rounded">
+                        <img src="./assets/images/home-solor.webp"
+                            alt="Home solar rooftop installation at Kothrud Pune" class="img-fluid rounded"
+                            loading="lazy" decoding="async" width="1280" height="960">
                         <div class="gallery-overlay">
                             <div class="gallery-content">
                                 <h4 class="text-white">KOTHRUD, PUNE</h4>
@@ -1390,7 +1431,8 @@ box-shadow:0 8px 25px rgba(0,0,0,0.06);
                 <!-- 6 -->
                 <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
                     <div class="gallery-item">
-                        <img src="./assets/images/home2.png" class="img-fluid rounded">
+                        <img src="./assets/images/home2.png" alt="Commercial rooftop solar project at Hinjewadi Pune"
+                            class="img-fluid rounded" loading="lazy" decoding="async" width="1024" height="683">
                         <div class="gallery-overlay">
                             <div class="gallery-content">
                                 <h4 class="text-white">HINJEWADI, PUNE</h4>
@@ -1591,23 +1633,23 @@ info@sonicdistributors.com
 <form id="contactForm">
 
 <div class="mb-3">
-<label class="form-label">Name *</label>
-<input type="text" class="form-control" placeholder="Your full name" required>
+<label class="form-label" for="contactName">Name *</label>
+<input type="text" class="form-control" id="contactName" aria-label="Name" placeholder="Your full name" required>
 </div>
 
 <div class="mb-3">
-<label class="form-label">Mobile *</label>
-<input type="tel" class="form-control" placeholder="10-digit number" required>
+<label class="form-label" for="contactMobile">Mobile *</label>
+<input type="tel" class="form-control" id="contactMobile" aria-label="Mobile Number" placeholder="10-digit number" required>
 </div>
 
 <div class="mb-3">
-<label class="form-label">Location *</label>
-<input type="text" class="form-control" placeholder="Your city / area" required>
+<label class="form-label" for="contactLocation">Location *</label>
+<input type="text" class="form-control" id="contactLocation" aria-label="Location" placeholder="Your city / area" required>
 </div>
 
 <div class="mb-3">
-<label class="form-label">Requirement *</label>
-<textarea class="form-control" rows="4"></textarea>
+<label class="form-label" for="contactRequirement">Requirement *</label>
+<textarea class="form-control" id="contactRequirement" rows="4" aria-label="Requirement"></textarea>
 </div>
 
 <button type="submit" class="btn btn-primary btn-lg mx-auto d-block w-70">
@@ -1628,7 +1670,9 @@ info@sonicdistributors.com
 src="https://www.google.com/maps?q=Sonic+Distributors,+Pune&ll=18.5149926,73.845442&z=17&output=embed"
 width="100%" height="400"
 style="border:0;border-radius:10px;"
-loading="lazy">
+loading="lazy"
+title="Sonic Distributors Pune location map"
+referrerpolicy="no-referrer-when-downgrade">
 </iframe>
 </div>
 
@@ -1776,16 +1820,17 @@ loading="lazy">
             </a>
 
             <!-- Bootstrap 5 JS Bundle -->
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+                defer></script>
 
             <!-- AOS Animation Library -->
-            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
 
             <!-- Custom JavaScript -->
-            <script src="./assets/js/main.js"></script>
+            <script src="./assets/js/main.js" defer></script>
 
             <!-- whatsapp refirection -->
-            <script src="./assets/js/whatsapp-redirect.js"></script>
+            <script src="./assets/js/whatsapp-redirect.js" defer></script>
 
 </body>
 
