@@ -715,17 +715,40 @@ function trackFormSubmission(formType, data) {
 
 function calculateSolar() {
 
-    let bill = document.getElementById("solarBill").value;
+    let bill = parseInt(document.getElementById("solarBill").value);
 
     if (!bill) return;
 
+    /* Recommended solar system size */
     let size = (bill / 1500).toFixed(1);
-    let savings = Math.round(bill * 0.8);
+
+    /* Monthly savings (realistic 70%) */
+    let savings = Math.round(bill * 0.7);
+
+    /* Yearly energy generation */
     let energy = Math.round(size * 1500);
 
+    /* Government subsidy calculation */
+    let kw = parseFloat(size);
+    let subsidy = 0;
+
+    if (kw <= 2) {
+        subsidy = kw * 30000;
+    } 
+    else if (kw <= 3) {
+        subsidy = (2 * 30000) + ((kw - 2) * 18000);
+    } 
+    else {
+        subsidy = 78000;
+    }
+
+    subsidy = Math.round(subsidy / 1000);
+
+    /* Update UI */
     document.getElementById("solarSize").innerText = size + " KW";
     document.getElementById("solarSavings").innerText = savings;
     document.getElementById("solarEnergy").innerText = energy;
+    document.getElementById("solarSubsidy").innerText = subsidy + "K";
 
     document.getElementById("solarResult").style.display = "block";
 
